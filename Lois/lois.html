@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loisCwaiPortfolio</title>
+	<link rel="stylesheet" type="text/css" href="homework2.css">
+	<style type="text/css">
+		/*MY ACCORDION MY ACCORDION*/
+.myAccordion {
+	flex: 100%;
+	padding: 30px 0 30px 20%;
+	line-height: 2;
+	font-size: 1.2em;
+	/*background-color: orange;*/
+	color: white;
+}
+.accordion {
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.5em;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: orange;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/*END OF MYACCORDION*/
+	</style>
+</head>
+<body>
+	<div id=div1>
+	<header style="background-color: navy; color: white;">
+		<h1>Timothy Cwai Lois</h1>
+		<h2>Software Developer</h2>
+	</header>
+</div>
+			<h3> A bit more about me </h3>
+			Hey!I am Lois and I love writting codes
+		<header style="background-color: red; color: white;">
+	<div id="div2">
+			<h3>Skills</h3>
+			Here are some technologies i enjoy writing day-to-day:
+	<ul>
+		<li>HTML & CSS</li>
+		<li>Javascript</li>
+		<li>React</li>
+		<li>Solidity</li>
+		<li>Angular</li>
+		<li>and many more</li>
+	</ul>
+	</div>
+</header>
+			<h3>How to Contact Me</h3>
+				The easiest way to contact me is via twitter: <a href="https://twitter.com/recwai">@recwai</a>
+	
+	<!-- THIS IS MY FEEDBACK -->
+	<section class="myAccordion">
+		<button class="accordion">Feedback</button>
+		<div class="panel">
+		  <p>Incorrect usage of tags. Header tags should be used for headers alone. This is because of challenged individuals</p>
+		  <p>There is something called <em>SEPARATION OF CONCERNS</em>. You should put CSS files separate and avoid having inline CSS just as you have done</p><p>You should add some Padding to your page to make it look good. <em>Timothy Cwai Lois</em> is close to the blue border and it doesn't look good. Some padding would be nice</p>
+
+		  <p>You will notice the blue and red background colour didn't touch the sides of your browser. This is because All browsers have something called <em>User Agent Stylesheet</em>.</p><p>A user agent style sheet is a ”default style sheet” provided by the browser (e.g., Chrome, Firefox, Edge, etc.). This is why
+					  I used <code> <strong><pre>* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}</pre></code></strong>. The code resets the user agent stylesheet and let you modify things as you wish. If you apply it to your code, you will notice that the background colors have no margins atall and look good. That code should be the first thing in your CSS file </p>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="../accordion.js"></script>
+</body>
+</html>
