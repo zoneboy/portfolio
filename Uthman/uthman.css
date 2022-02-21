@@ -1,0 +1,56 @@
+/*Selector {
+	Property: value;
+}*/
+h2 {
+	background: rgb(225,0,127); color: white; 
+}
+h1 {
+	background: blue; color: white; text-align: center;
+}
+
+/*MY ACCORDION MY ACCORDION*/
+.myAccordion {
+	flex: 100%;
+	padding: 30px 0 30px 20%;
+	line-height: 2;
+	font-size: 1.2em;
+	/*background-color: orange;*/
+	color: white;
+}
+.accordion {
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.5em;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: orange;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/*END OF MYACCORDION*/

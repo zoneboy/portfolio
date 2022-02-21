@@ -1,0 +1,51 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<title>Hamzat Mujeeb Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="eemjay.css">
+</head>
+<body>
+	<div id=div1>
+	<header style="background-color: green; color: white">
+		<hi>Hamzat Mujeeb</hi>
+		<h2>Software Developer</h2>
+	</header>
+</div>
+		<h3> A bit more about me</h3>
+		Hey! I am Eemjay and love writting codes
+		<header style="background-color: red; color: white">
+			<div id="div2">
+				<h4>Skills</h4>
+				<p>Here are some technologies i enjoy writing day-to-day:</p>
+				<ul>
+					<li>HTML $ CSS</li>
+					<li>Javascript</li>
+					<li>React</li>
+					<li>Solidity</li>
+					<li>Angular</li>
+					<li>and many more</li>
+				</ul>
+			</div>
+		</header>
+		<h3>How to Contact Me</h3>
+		<h4> The easiest way to contact me is via twitter: <a href="https://twitter.com/">@eemjay</a></h4>
+
+
+<!-- THIS IS MY FEEDBACK -->
+	<section class="myAccordion">
+		<button class="accordion">Feedback</button>
+		<div class="panel">
+		  <p>You forgot to close the twitter link h4 tag</p> <p>There is something called <em>SEPARATION OF CONCERNS</em>. You should put CSS files separate and avoid having inline CSS just as you have done</p>
+
+		  <p>You will notice the green and red background colour didn't touch the sides of your browser. This is because All browsers have something called <em>User Agent Stylesheet</em>.</p><p>A user agent style sheet is a ”default style sheet” provided by the browser (e.g., Chrome, Firefox, Edge, etc.). This is why
+					  I used <code> <strong><pre>* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}</pre></code></strong>. The code resets the user agent stylesheet and let you modify things as you wish. If you apply it to your code, you will notice that the background colors have no margins atall and look good. That code should be the first thing in your CSS file </p>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="../accordion.js"></script>			
+</body>
+</html>
